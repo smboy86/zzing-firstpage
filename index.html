@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=980">
+<title>다람지 홈페이지</title>
+<link rel="stylesheet" type="text/css" href="./assets/css/common.css">
+<script type="text/javascript" src="./assets/js/common.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.slim.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+        
+});
+
+</script>
+</head>
+<body class="main">
+    <div class="wrap">
+        <div>
+            
+        </div>
+
+
+adsfadsfdasfadsf
+sadf
+asdf
+adsf
+        <!-- footer -->
+        <div id="footer" class="main">
+            <div>
+                <p class="logo"><img src="./assets/images/footer_logo.jpg" alt="하이메이크샵"></p>
+                <ul class="policy">
+                    <li><a href="http://www.chunjae.co.kr/company/main/main.aspx" target="_blank">회사소개</a></li>
+                    <li><a href="/Member/Agreement" target="_self">이용약관</a></li>
+                    <li><a href="/Member/Privacy_Police" target="_self">개인정보처리방침</a></li>
+                    <li><a href="mailto:kyley@chunjae.co.kr">제휴문의</a></li>
+                    <li class="last"><a href="/Common/Sitemap">고객센터메일</a></li>
+                </ul>
+                <div class="family">
+                    <a class="btn_family">패밀리사이트</a>
+                    <ul>
+                        <li><a href="http://www.chunjae.co.kr/main/Default.aspx" target="_blank">천재교육</a></li>
+                        <li><a href="http://www.hbstudy.co.kr/" target="_blank">해법스터디</a></li>
+                    </ul>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(document).bind("click", function (e) {
+                            var clickClass = $(e.target).attr("class");
+                            if (clickClass != "btn_family") {
+                                if ($(".family ul").css("display") != "none") {
+                                    $(".family").find("ul").hide();
+                                }
+                            } else {
+                                if ($(".family ul").css("display") == "none") {
+                                    $(".family").find("ul").show();
+                                } else {
+                                    $(".family").find("ul").hide();
+                                }
+                            }
+                        });
+                    });
+                </script>
+                <div class="cominfo">
+                    <ul class="info">
+                        <li>(주)코리아센터닷컴<span> | </span></li>
+                        <li>서울 금천구 가산동 371-28 유림라이온스밸리 14층 | 대표 김기록 | 사업자번호 : 206-81-21131</li>
+                        <li>Tel. 02-6903-9521 | Fax. 02-2026-5314 Copyright @ Makeshop. All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--/ footer -->
+    </div>
+</body>
+</html>

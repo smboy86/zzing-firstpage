@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=980">
+<meta name="apple-mobile-web-app-title" content="천재교육 밀크T – 매일 마시는 스마트 교과서" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<title>천재교육 밀크T – 매일 마시는 스마트 교과서</title>
+<link rel="stylesheet" type="text/css" href="/include/css/common_v3.css" />
+<script type="text/javascript" src="/include/js/jquery-1.7.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    function mf_HistoryGo() {
+        history.back(-1);
+        return;
+    }
+
+    function mf_HomeGo() {
+        var homeUrl = "http://www.milkt.co.kr";
+        try {
+            homeUrl = "http://" + document.referrer.match(/^http:\/\/([a-z0-9-_\.]*)[\/\?]/i)[1];
+        } catch (e) { }
+        document.location.href = homeUrl;
+
+        return;
+    }
+//]]>
+</script>
+
+</head>
+<body>
+<!-- 시스템점검중 -->
+<div class="error_page03">
+    <ul>
+        <li>
+            <a href="#" onclick="mf_HistoryGo(); return false;"><img src="/images/common/error_btn_prev02.gif" alt="이젠 페이지로" /></a>
+            <a href="#" onclick="mf_HomeGo(); return false;"><img src="/images/common/error_btn_home02.gif" alt="홈으로" /></a>
+        </li>
+    </ul>
+
+</div>
+<!-- // 시스템점검중 -->
+</body>
