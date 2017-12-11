@@ -1,6 +1,5 @@
 language: php
 php:
-  - 5.4
   - 5.5
 branches:
   only:
@@ -9,5 +8,5 @@ env:
   global:
     - "FTP_USER=pi"
     - "FTP_PASSWORD=tjdals86"
-after_success:
+before_success:
     "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://zzing.co.kr/var/www/html/drz"
