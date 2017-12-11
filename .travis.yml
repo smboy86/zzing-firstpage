@@ -1,4 +1,6 @@
-language: java
+language: node_js
+node_js:
+  - "stable"
 
 #branches:
 #  only:
@@ -7,5 +9,5 @@ language: java
 #  global:
 #    - "FTP_USER=pi"
 #    - "FTP_PASSWORD=tjdals86"
-#before_success:
-#    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://zzing.co.kr/var/www/html/drz"
+#after_success:
+    #"curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://zzing.co.kr/var/www/html/drz"
